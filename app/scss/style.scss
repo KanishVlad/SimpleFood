@@ -39,7 +39,7 @@
 
   &__list {
     display: flex;
-    margin-right: 53px;
+    margin-right: 46px;
   }
 
   &__item:not(:last-child) {
@@ -112,7 +112,7 @@
   }
 
   &__link:not(:last-child) {
-    margin-right: 15px;
+    margin-right: 10px;
   }
 
   &__number {
@@ -130,6 +130,81 @@
     transition: color .5s, background-color .5s;
   }
 
+}
+
+.hero {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    padding: 156px 130px 0 0;
+  }
+  &__inner {
+    padding-bottom: 20px;
+  }
+  &__title,
+  &__subtitle {
+    @extend %rubik-500;
+    font-size: 66px;
+    line-height: 1.3;
+    color: $dark;
+    text-transform: uppercase;
+   
+  }
+  &__subtitle {
+    color: $orange-900;
+  }
+
+  &__text {
+    max-width: 450px;
+    width: 100%;
+    margin-bottom: 18px;
+  }
+
+  &__btn {
+    padding: 10px 32px;
+    background-color: $orange-900;
+    border-radius: 6px;
+    color: #ffffff;
+    margin-right: 16px;
+    font-size: 18px;
+    line-height: 1.3;
+    border: 2px solid transparent;
+    transition: border-color .5s, background-color .5s, color .5s, box-shadow .5s;
+    &:focus {
+      border-color: rgba(255, 104, 56, 0.70);
+      background-color: rgba(255, 104, 56, 0.10);
+      color: $orange-900;
+    }
+    &:hover {
+      color: $orange-900;
+      border-color: rgba(255, 104, 56, 0.70);
+      background-color: rgba(255, 255, 255, 0.10);
+      box-shadow: 0 5px 12px 0px rgba(255, 104, 56, 0.20);
+    }
+    &:active {
+      background-color: rgba(255, 104, 56, 0.10);
+      color: $orange-900;
+    }
+  }
+
+  &__link {
+    border-bottom: 1px solid $dark;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 2px 0;
+    transition: border-color .3s, color .3s, text-shadow .3s;
+    &:focus {
+      border-color: rgba(255, 104, 56, 0.70);
+    }
+    &:hover {
+      color: $orange-900;
+    }
+    &:active {
+      text-shadow: 2px 2px 5px rgba(54, 56, 83, 0.50);
+    }
+  }
 }
 
 
