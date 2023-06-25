@@ -19,5 +19,9 @@
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.7.0",
     "sass": "^1.63.2"
+  },
+  "dependencies": {
+    "jquery-ui": "^1.13.2",
+    "mixitup": "^3.3.1"
   }
 }
