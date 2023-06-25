@@ -14,6 +14,12 @@ body {
   flex-direction: column;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .section {
   padding-bottom: 120px;
 }
@@ -27,6 +33,25 @@ body {
   padding-bottom: 60px;
 }
 
+.link {
+  font-size: 18px;
+  line-height: 1.3;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: color .5s, border-color .5s, text-shadow .5s;
+
+  &:focus {
+    border-color: rgba(255, 104, 56, 0.7);
+  }
+
+  &:hover {
+    color: $orange-900;
+  }
+
+  &:active {
+    text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.50);
+  }
+}
 
 .button {
   color: #ffffff;
@@ -101,34 +126,21 @@ body {
   }
 }
 
-.link {
-  font-size: 18px;
-  line-height: 1.3;
-  border: 2px solid transparent;
-  border-radius: 5px;
-  transition: color .5s, border-color .5s, text-shadow .5s;
-
-  &:focus {
-    border-color: rgba(255, 104, 56, 0.7);
-  }
-
-  &:hover {
-    color: $orange-900;
-  }
-
-  &:active {
-    text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.50);
-  }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main {
   flex-grow: 1;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .logo {
@@ -149,9 +161,6 @@ body {
     opacity: .5;
   }
 }
-
-
-
 
 .user-nav {
   svg {
@@ -204,9 +213,7 @@ body {
 
 }
 
-
-
-.card {
+.burgers-card {
   text-align: center;
   font-size: 14px;
   padding-bottom: 60px;
@@ -230,17 +237,20 @@ body {
   }
 
   &__img {
-
+    width: 140px;
+    height: 140px;
     margin: 0 auto 10px;
   }
 
   &__title {
     margin-bottom: 7px;
+    @extend %rubik-400;
   }
 
   &__price {
     display: block;
     margin-bottom: 5px;
+    font-size: 15px;
     @extend %rubik-500;
   }
 
@@ -249,48 +259,50 @@ body {
   }
 }
 
-
 .link__icon {
-
   display: inline-block;
   border: 2px solid transparent;
   height: 42px;
   border-radius: 50%;
   transition: border-color .5s;
+
   circle {
     transition: fill .5s;
   }
+
   path {
     transition: fill .5s;
   }
- 
+
   &:focus {
     border-color: $orange-900;
+
     circle {
-        fill: #FFF2ED;
-      }
-    
-      path {
-        fill: $darkBlue-900;
-      }
+      fill: #FFF2ED;
+    }
+
+    path {
+      fill: $darkBlue-900;
+    }
   }
+
   &:hover {
     circle {
       fill: $orange-900;
     }
+
     path {
       fill: #FFFFFF;
     }
   }
+
   &:active {
     circle {
-        fill: #FFF2ED;
-      }
-    
-      path {
-        fill: $orange-900;
-      }
+      fill: #FFF2ED;
+    }
+
+    path {
+      fill: $orange-900;
+    }
   }
-   
-  
 }
