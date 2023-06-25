@@ -1,28 +1,20 @@
 $(function(){
+
+  $(window).on('scroll', function () {
+    if ($(window).scrollTop() > 0) {
+      $('.header').addClass('header-fixed');
+    } else {
+      $('.header').removeClass('header-fixed');
+    }
+  });
  
-  var mixer = mixitup('.card-burger', {
+  var mixer = mixitup('.card', {
     "animation": {
       "duration": 700,
       "nudge": false,
 
     }
   });
-
-  var mixer = mixitup('.card-pizza', {
-    "animation": {
-      "duration": 700,
-      "nudge": false,
-
-    }
-  });
-
-  $('.card-pizza').hide();
-
-  
-  $('.popular__btn').one('click', function () {
-    $('.card-pizza').show();
-  });
-
 
 
 })

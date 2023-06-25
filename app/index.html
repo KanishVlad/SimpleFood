@@ -103,7 +103,7 @@
         </h2>
         <ul class="popular__filter">
           <li class="popular__item">
-            <button class="popular__btn popular__btn--active button-category" type="button" data-filter=".category-burgers">
+            <button class="popular__btn popular__btn--active button-category" type="button" data-filter="all">
               <svg class="popular__svg" width="44" height="44" viewBox="0 0 44 44" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_0_161)">
@@ -169,7 +169,7 @@
             </button>
           </li>
           <li class="popular__item">
-            <button class="popular__btn button-category" type="button" data-filter="sandwiches">
+            <button class="popular__btn button-category" type="button" data-filter=".category-sandwiches">
               <svg class="popular__svg" width="44" height="44" viewBox="0 0 44 44" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_0_263)">
@@ -208,7 +208,7 @@
             </button>
           </li>
           <li class="popular__item">
-            <button class="popular__btn button-category" type="button" data-filter="asian">
+            <button class="popular__btn button-category" type="button" data-filter=".category-asian">
               <svg class="popular__svg" width="44" height="44" viewBox="0 0 44 44" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_0_200)">
@@ -247,7 +247,7 @@
             </button>
           </li>
           <li class="popular__item">
-            <button class="popular__btn button-category" type="button" data-filter="sets">
+            <button class="popular__btn button-category" type="button" data-filter=".category-sets">
               <svg class="popular__svg" width="44" height="44" viewBox="0 0 44 44" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_0_228)">
@@ -288,218 +288,162 @@
                   </clipPath>
                 </defs>
               </svg>
-
+    
               Cети
             </button>
           </li>
         </ul>
-
-        
-        <ul class="card-burger">
-          <li class="card-burger__item mix category-burgers">
-            <a href="" class="card-burger__link">
-              <img class="card-burger__img" src="images/content/burger-1.jpg" alt="">
-            </a>
-            <a class="card-burger__link " href="#">
-              <h3 class="card-burger__title">
-                Чізбургер з листям салату
-              </h3>
-            </a>
-
-            <span class="card-burger__price">160 грн.</span>
-            <button class="card-burger__btn button">До кошика</button>
-          </li>
-
-          <li class="card-burger__item mix category-burgers">
+    
+    
+        <ul class="card">
+          <li class="card__item mix all category-pizza">
+            <article class="card__article">
             <a href="" class="card__link">
-              <img class="card-burger__img" src="images/content/burger-2.jpg" alt="">
+              <img class="card__img" src="images/content/burger-1.jpg" alt="">
             </a>
-            <a class="card-burger__link " href="#">
-              <h3 class="card-burger__title">
-                Біфбургер
-              </h3>
-            </a>
-          
-            <span class="card-burger__price">160 грн.</span>
-            <button class="card-burger__btn button">До кошика</button>
-          </li>
-
-          <li class="card-burger__item mix category-burgers">
-            <a href="" class="card-burger__link">
-              <img class="card-burger__img" src="images/content/burger-3.jpg" alt="">
-            </a>
-            <a class="card-burger__link " href="#">
-              <h3 class="card-burger__title">
-                Королівський чізбургер
-              </h3>
-            </a>
-          
-            <span class="card-burger__price">160 грн.</span>
-            <button class="card-burger__btn button">До кошика</button>
-          </li>
-
-          <li class="card-burger__item mix category-burgers">
-            <a href="" class="card-burger__link">
-              <img class="card-burger__img" src="images/content/burger-4.jpg" alt="">
-            </a>
-            <a class="card-burger__link " href="#">
-              <h3 class="card-burger__title">
-                Чорний гамбургер
-              </h3>
-            </a>
-          
-            <span class="card-burger__price">160 грн.</span>
-            <button class="card-burger__btn button">До кошика</button>
-          </li>
-
-          <li class="card-burger__item mix category-burgers">
-            <a href="" class="card-burger__link">
-              <img class="card-burger__img" src="images/content/burger-5.jpg" alt="">
-            </a>
-            <a class="card-burger__link " href="#">
-              <h3 class="card-burger__title">
-                Чікен бургер
-              </h3>
-            </a>
-            <span class="card-burger__price">160 грн.</span>
-            <button class="card-burger__btn button">До кошика</button>
-          </li>
-          <li class="card-burger__item mix category-burgers">
-            <a href="" class="card-burger__link">
-              <img class="card-burger__img" src="images/content/burger-6.jpg" alt="">
-            </a>
-            <a class="card-burger__link " href="#">
-              <h3 class="card-burger__title">
+            <a class="card__link" href="#">
+              <h3 class="card__title">
                 Чізбургер з листям салату
               </h3>
             </a>
-          
-            <span class="card-burger__price">160 грн.</span>
-            <button class="card-burger__btn button">До кошика</button>
+    
+            <span class="card__price">160 грн.</span>
+            <button class="card__btn button">До кошика</button>
           </li>
-
-          <li class="card-burger__item mix category-burgers">
-            <a href="" class="card-burger__link">
-              <img class="card-burger__img" src="images/content/burger-7.jpg" alt="">
+          </article>
+          <li class="card__item mix all">
+            <a href="" class="card__link">
+              <img class="card__img" src="images/content/burger-2.jpg" alt="">
             </a>
-            <a class="card-burger__link " href="#">
-              <h3 class="card-burger__title">
+            <a class="card__link " href="#">
+              <h3 class="card__title">
                 Біфбургер
               </h3>
             </a>
-          
-            <span class="card-burger__price">160 грн.</span>
-            <button class="card-burger__btn button">До кошика</button>
+    
+            <span class="card__price">160 грн.</span>
+            <button class="card__btn button">До кошика</button>
           </li>
-
-          <li class="card-burger__item mix category-burgers">
-            <a href="" class="card-burger__link">
-              <img class="card-burger__img" src="images/content/burger-8.jpg" alt="">
+    
+          <li class="card__item mix all category-pizza">
+            <a href="" class="card__link">
+              <img class="card__img" src="images/content/burger-3.jpg" alt="">
             </a>
-            <a class="card-burger__link " href="#">
-              <h3 class="card-burger__title">
+            <a class="card__link " href="#">
+              <h3 class="card__title">
                 Королівський чізбургер
               </h3>
             </a>
-          
-            <span class="card-burger__price">160 грн.</span>
-            <button class="card-burger__btn button">До кошика</button>
+    
+            <span class="card__price">160 грн.</span>
+            <button class="card__btn button">До кошика</button>
           </li>
-
-          <li class="card-burger__item mix category-burgers">
-            <a href="" class="card-burger__link">
-              <img class="card-burger__img" src="images/content/burger-9.jpg" alt="">
+    
+          <li class="card__item mix all category-asian">
+            <a href="" class="card__link">
+              <img class="card__img" src="images/content/burger-4.jpg" alt="">
             </a>
-            <a class="card-burger__link " href="#">
-              <h3 class="card-burger__title">
+            <a class="card__link " href="#">
+              <h3 class="card__title">
                 Чорний гамбургер
               </h3>
             </a>
-          
-            <span class="card-burger__price">160 грн.</span>
-            <button class="card-burger__btn button">До кошика</button>
+    
+            <span class="card__price">160 грн.</span>
+            <button class="card__btn button">До кошика</button>
           </li>
-
-          <li class="card-burger__item mix category-burgers">
-            <a href="" class="card-burger__link">
-              <img class="card-burger__img" src="images/content/burger-10.jpg" alt="">
+    
+          <li class="card__item mix all">
+            <a href="" class="card__link">
+              <img class="card__img" src="images/content/burger-5.jpg" alt="">
             </a>
-            <a class="card-burger__link " href="#">
-              <h3 class="card-burger__title">
+            <a class="card__link " href="#">
+              <h3 class="card__title">
                 Чікен бургер
               </h3>
             </a>
-          
-            <span class="card-burger__price">160 грн.</span>
-            <button class="card-burger__btn button">До кошика</button>
+            <span class="card__price">160 грн.</span>
+            <button class="card__btn button">До кошика</button>
           </li>
-          
-        </ul>
-
-        <ul class="card-pizza">
-          <li class="card-pizza__item mix category-pizza">
-            <a href="" class="card-pizza__link">
-              <img class="card-pizza__img" src="images/content/burger-1.jpg" alt="">
+          <li class="card__item mix all category-sets">
+            <a href="" class="card__link">
+              <img class="card__img" src="images/content/burger-6.jpg" alt="">
             </a>
-            <a class="card-pizza__link " href="#">
-              <h3 class="card-pizza__title">
+            <a class="card__link " href="#">
+              <h3 class="card__title">
                 Чізбургер з листям салату
               </h3>
             </a>
-        
-            <span class="card-pizza__price">160 грн.</span>
-            <button class="card-pizza__btn button">До кошика</button>
+    
+            <span class="card__price">160 грн.</span>
+            <button class="card__btn button">До кошика</button>
           </li>
-        
-          <li class="card-pizza__item mix category-pizza">
-            <a href="" class="card-pizza__link">
-              <img class="card-pizza__img" src="images/content/burger-2.jpg" alt="">
+    
+          <li class="card__item mix all category-sandwiches">
+            <a href="" class="card__link">
+              <img class="card__img" src="images/content/burger-7.jpg" alt="">
             </a>
-            <a class="card-pizza__link " href="#">
-              <h3 class="card-pizza__title">
+            <a class="card__link " href="#">
+              <h3 class="card__title">
                 Біфбургер
               </h3>
             </a>
-        
-            <span class="card-pizza__price">160 грн.</span>
-            <button class="card-pizza__btn button">До кошика</button>
+    
+            <span class="card__price">160 грн.</span>
+            <button class="card__btn button">До кошика</button>
           </li>
-        
-          <li class="card-pizza__item mix category-pizza">
-            <a href="" class="card-pizza__link">
-              <img class="card-pizza__img" src="images/content/burger-3.jpg" alt="">
+    
+          <li class="card__item mix all">
+            <a href="" class="card__link">
+              <img class="card__img" src="images/content/burger-8.jpg" alt="">
             </a>
-            <a class="card-pizza__link " href="#">
-              <h3 class="card-pizza__title">
+            <a class="card__link " href="#">
+              <h3 class="card__title">
                 Королівський чізбургер
               </h3>
             </a>
-        
-            <span class="card-pizza__price">160 грн.</span>
-            <button class="card-pizza__btn button">До кошика</button>
+    
+            <span class="card__price">160 грн.</span>
+            <button class="card__btn button">До кошика</button>
           </li>
-        
-          <li class="card-pizza__item mix category-pizza">
-            <a href="" class="card-pizza__link">
-              <img class="card-pizza__img" src="images/content/burger-4.jpg" alt="">
+    
+          <li class="card__item mix all">
+            <a href="" class="card__link">
+              <img class="card__img" src="images/content/burger-9.jpg" alt="">
             </a>
-            <a class="card-pizza__link " href="#">
-              <h3 class="card-pizza__title">
+            <a class="card__link " href="#">
+              <h3 class="card__title">
                 Чорний гамбургер
               </h3>
             </a>
-        
-            <span class="card-pizza__price">160 грн.</span>
-            <button class="card-pizza__btn button">До кошика</button>
+    
+            <span class="card__price">160 грн.</span>
+            <button class="card__btn button">До кошика</button>
           </li>
+    
+          <li class="card__item mix all">
+            <a href="" class="card__link">
+              <img class="card__img" src="images/content/burger-10.jpg" alt="">
+            </a>
+            <a class="card__link " href="#">
+              <h3 class="card__title">
+                Чікен бургер
+              </h3>
+            </a>
+    
+            <span class="card__price">160 грн.</span>
+            <button class="card__btn button">До кошика</button>
+          </li>
+    
         </ul>
 
+    
         <a href="#" class="popular__link link">
           Показати ще
         </a>
-        
-
-
+    
+    
+    
       </div>
     </section>
 
@@ -617,7 +561,7 @@
           </ul>
           <ul class="social">
             <li class="social__item">
-              <a class="social__link link " href="#">
+              <a class="social__link  link__icon" href="#">
                 <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="19.5" cy="19.5" r="19.5" fill="#ECECEC" />
                   <path
@@ -628,7 +572,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link link" href="#">
+              <a class="social__link link__icon" href="#">
                 <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="19.5" cy="19.5" r="19.5" fill="#ECECEC" />
                   <path
@@ -639,7 +583,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link link" href="#">
+              <a class="social__link link__icon" href="#">
                 <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="19.5" cy="19.5" r="19.5" fill="#ECECEC" />
                   <path
@@ -651,14 +595,11 @@
             </li>
           </ul>
         </address>
-
-
-
       </div>
     </div>
-    <p class="footer__author">
+    <a class="footer__author" href="#">
       © 2023 Simple Food
-    </p>
+    </a>
   </footer>
 
 

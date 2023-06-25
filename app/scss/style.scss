@@ -5,6 +5,14 @@
 
 .header {
   padding: 60px 0;
+  position: fixed;
+  width: 100%;
+  max-width: 1200px;
+  background-color: $silver-100;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 
   &__inner {
     display: flex;
@@ -12,6 +20,34 @@
     align-items: center;
   }
 }
+
+.header-fixed {
+  animation-name: show-menu;
+  animation-duration: 1s;
+  padding: 25px 0 15px 0;
+  left: 0;
+  right: 0;
+  max-width: 1170px;
+  z-index: 10;
+  margin: 0 auto;
+  background-color: $silver-200;
+}
+
+
+
+@keyframes show-menu {
+  0% {
+    opacity: 0;
+    top: -200px;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+
 
 .menu {
   display: flex;
@@ -60,11 +96,8 @@
 
 .hero {
 
-  // background-image: url('../images/delivery-guy.png');
-  // background-size: auto;
-  // background-repeat: no-repeat;
-  // background-position: 73%;
-  // margin-bottom: 120px;
+  padding-top: 173px;
+
   &__wrapper {
     display: flex;
     max-width: 100%;
@@ -119,6 +152,9 @@
 }
 
 .popular {
+  text-align: center;
+  margin-bottom: 120px;
+
   &__filter {
     display: flex;
     justify-content: center;
@@ -128,7 +164,7 @@
   &__item:not(:last-child) {
     margin-right: 20px;
   }
-  
+
 
   &__btn {
     display: flex;
@@ -146,10 +182,9 @@
   }
 
   &__link {
-    display: inline-block;
-    text-align: center;
     margin-bottom: 120px;
     text-decoration: underline;
+
     &:hover,
     &:focus,
     &:active {
@@ -157,32 +192,27 @@
     }
   }
 
-  
+
 
 
 }
 
 .mixitup-control-active {
   background-color: $orange-900;
-    color: #ffffff;
-  
-    path {
-      fill: #ffffff;
-    }
+  color: #ffffff;
+
+  path {
+    fill: #ffffff;
   }
+}
 
 
-.card-burger {
+.card {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 30px;
 }
 
-.card-pizza {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 30px;
-}
 
 
 .footer {
@@ -208,11 +238,26 @@
   }
 
   &__input {
-    color: $gray;
+    color: $darkBlue-900;
     opacity: .8;
     border: 1px solid $gray;
     border-radius: 5px;
     padding: 11px 14px;
+    outline: 2px solid transparent;
+    transition: outline .5s;
+  }
+
+  &__input::placeholder {
+    transition: color .5s;
+    color: $gray;
+  }
+
+  &__input:focus {
+    outline-color: $orange-900;
+  }
+
+  &__input:hover::placeholder {
+    color: $darkBlue-900;
   }
 
   &__btn {
@@ -311,6 +356,7 @@
 
 .social {
   display: flex;
+
 
   &__item {
     margin-right: 9px;
