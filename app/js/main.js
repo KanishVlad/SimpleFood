@@ -8,7 +8,7 @@ $(function(){
     }
   });
  
-  var mixer = mixitup('.burgers-card', {
+  var mixer = mixitup('.popular__list', {
     "animation": {
       "duration": 700,
       "nudge": false,
